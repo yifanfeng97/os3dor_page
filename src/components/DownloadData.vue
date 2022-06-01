@@ -100,7 +100,7 @@
           <a
             href="https://data.shrec22.moon-lab.tech:18443/OS-MN40.tar.gz"
             target="_blank"
-            >here(~46G)</a
+            >here(~1.9G)</a
           >. The qeury and target labels can be download from
           <a href="" target="_blank">here</a>.
         </p>
@@ -110,7 +110,7 @@
           <a
             href="https://data.shrec22.moon-lab.tech:18443/OS-MN40-Miss.tar.gz"
             target="_blank"
-            >here(~28G)</a
+            >here(400M)</a
           >. The qeury and target labels can be download from
           <a href="" target="_blank">here</a>.
         </p>
@@ -120,7 +120,7 @@
           <a
             href="https://data.shrec22.moon-lab.tech:18443/OS-MN40-Miss.tar.gz"
             target="_blank"
-            >here(~28G)</a
+            >here(~100M)</a
           >. The qeury and target labels can be download from
           <a href="" target="_blank">here</a>.
         </p>

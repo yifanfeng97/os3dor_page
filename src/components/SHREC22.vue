@@ -39,7 +39,7 @@
       </v-col>
 
       <v-col cols="12">
-        <h3>SHREC22 Leaderboard (Frozen in 24:00, Mar.5, 2022)</h3>
+        <h3>SHREC'22 Leaderboard (Frozen in 24:00, Mar.5, 2022)</h3>
         <p>
           The two tables recorder the final results of
           <a href="https://www.moon-lab.tech/shrec22" target="_blank"
@@ -74,7 +74,12 @@
 
       <v-col cols="12">
         <h3>Reference</h3>
-        <p>-----</p>
+        <p>
+          Yifan Feng and Yue Gao, et al.
+          <a href="https://www.moon-lab.tech/shrec22" target="_blank"
+            >SHREC'22 Track: Open-Set 3D Object Retrieval</a
+          >. Computers and Graphics (Elsevier). <br />
+        </p>
       </v-col>
     </v-row>
   </v-container>
