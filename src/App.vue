@@ -110,16 +110,17 @@
             <h3>Baseline for the Open-Set 3DOR</h3>
             <p>
               Here, we provide a baseline code, named
-              <span class="font-weight-black">OS-3DOR</span>, for the task,
-              which can be found in
+              <a href="https://github.com/yifanfeng97/OS3D" target="_blank"
+                ><span class="font-weight-black">OS3D</span></a
+              >, for this task. The main code is motivated by the
               <a
                 href="https://github.com/yifanfeng97/OS-MN40-Example"
                 target="_blank"
-                >here</a
-              >. It is also the Example Code for the SHREC'22 Open-set 3D Object
-              Retrieval. The baseline code is implemented by directly
-              concatenating the features extracted by those modality-specify
-              networks (<a
+                >Example Code</a
+              >
+              of the SHREC'22 Open-set 3D Object Retrieval. The OS3D is
+              implemented by directly concatenating the features extracted by
+              those modality-specify networks (<a
                 href="http://vis-www.cs.umass.edu/mvcnn/"
                 target="_blank"
                 >MVCNN</a
@@ -127,17 +128,13 @@
               <a href="http://stanford.edu/~rqi/pointnet/" target="_blank"
                 >PointNet</a
               >
-              for the point cloud modality,
+              for the point cloud modality, and
               <a href="https://3dshapenets.cs.princeton.edu/">ShapeNets</a> for
-              the voxel modality, and
-              <a href="https://github.com/iMoonLab/MeshNet" target="_blank"
-                >MeshNet</a
-              >
-              for the mesh modality). Then, the concatenated features are
-              adopted to evaluate the retrieval performance on those unknown
-              categories of the retrieval set on the OS-MN40, OS-NTU, and OS-ESB
-              datasets. Detailed performance can be found in the following
-              "Open-set 3DOR Leaderboards".
+              the voxel modality). Then, the concatenated features are adopted
+              to evaluate the retrieval performance on those unknown categories
+              of the retrieval set on the OS-MN40-core, OS-NTU-core, and
+              OS-ESB-core datasets. Detailed performance can be found in the
+              following "Open-set 3DOR Leaderboards".
             </p>
           </v-col>
         </v-row>

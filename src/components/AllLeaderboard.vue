@@ -6,7 +6,12 @@
         <p>
           Here, we provide leaderboards for those open-set 3DOR datasets. Please
           email <a href="mailto:evanfeng97@qq.com">Yifan Feng</a> to add or
-          update your results. The retrieval metric code can refer to <a href="" target="_blank">this</a>.
+          update your results. The retrieval metric code can refer to
+          <a
+            href="https://github.com/yifanfeng97/OS3D/blob/main/retrieval_metric.py"
+            target="_blank"
+            >this</a
+          >.
         </p>
         <p>
           In your email please provide following information in this format:
@@ -17,8 +22,8 @@
         </p>
         <p>
           Example: <br />
-          [OS-MN40-core, OS-3DOR, 0.0, 0.0, 0.0], [OS-NTU-core, OS-3DOR, 0.0,
-          0.0, 0.0], [OS-ESB-core, OS-3DOR, 0.0, 0.0, 0.0]. <br />
+          [OS-MN40-core, OS3D, 0.2907, 0.4520, 0.6940], [OS-NTU-core, OS3D, 0.1825,
+          0.1279, 0.8163], [OS-ESB-core, OS3D, 0.3159, 0.1495, 0.7018]. <br />
           Yifan Feng and Yue Gao, et al., "SHREC'22 Track: Open-set 3D Object
           Retrieval", Computers and Graphics (Elsevier), https://...
         </p>
@@ -85,26 +90,26 @@ export default {
     ],
     res_mn40: [
       {
-        alg: "OS-3DOR [1]",
-        map: "6.6",
-        ndcg: "6.6",
-        anmrr: "6.6",
+        alg: "OS3D [1]",
+        map: "0.2907",
+        ndcg: "0.4520",
+        anmrr: "0.6940",
       },
     ],
     res_ntu: [
       {
-        alg: "OS-3DOR [1]",
-        map: "6.6",
-        ndcg: "6.6",
-        anmrr: "6.6",
+        alg: "OS3D [1]",
+        map: "0.1825",
+        ndcg: "0.1279",
+        anmrr: "0.8163",
       },
     ],
     res_esb: [
       {
-        alg: "OS-3DOR [1]",
-        map: "6.6",
-        ndcg: "6.6",
-        anmrr: "6.6",
+        alg: "OS3D [1]",
+        map: "0.3159",
+        ndcg: "0.1495",
+        anmrr: "0.7018",
       },
     ],
   }),
