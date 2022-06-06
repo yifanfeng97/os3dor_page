@@ -114,7 +114,14 @@
             target="_blank"
             >grid_index</a
           >
-          functions.
+          functions. More details can refer to the
+          <a
+            href="https://github.com/yifanfeng97/OS3D/blob/main/datasets.py"
+            target="_blank"
+            >dataloader</a
+          >
+          in
+          <a href="https://github.com/yifanfeng97/OS3D" target="_blank">OS3D</a>.
         </p>
         <p>
           <span class="font-weight-black">OS-MN40-core:</span> Download links:

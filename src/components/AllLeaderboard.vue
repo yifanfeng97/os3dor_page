@@ -18,7 +18,7 @@
           <br />
           [Dataset Name, Algorithm Name, mAP score, NDCG@100 score, ANMRR
           score], [...].<br />
-          Author list, Paper title, Conference, Link to paper.
+          Author list, Paper title, Conference/Journal, Link to paper.
         </p>
         <p>
           Example: <br />
