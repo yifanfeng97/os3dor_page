@@ -4,7 +4,7 @@
       <v-col cols="12">
         <h2>Downloads</h2>
       </v-col>
-      <v-col cols="12">
+      <!-- <v-col cols="12">
         <h3>OS-MN40 and OS-MN40-Miss</h3>
         <p>
           OS-MN40 and OS-MN40-Miss contain
@@ -70,10 +70,10 @@
             >Target Label</a
           >.
         </p>
-      </v-col>
+      </v-col> -->
 
       <v-col cols="12">
-        <h3>OS-MN40-core, OS-NTU-core, and OS-ESB-core</h3>
+        <h3>OS-ESB-core, OS-NTU-core, and OS-MN40-core</h3>
         <p>
           Each 3D object in the three datasets contains
           <span class="font-weight-black">three modalities</span>: multi-view,
@@ -121,27 +121,29 @@
             >dataloader</a
           >
           in
-          <a href="https://github.com/yifanfeng97/OS3D" target="_blank">OS3D</a>.
+          <a href="https://github.com/yifanfeng97/OS3D" target="_blank">OS3D</a
+          >.
         </p>
         <p>
-          <span class="font-weight-black">OS-MN40-core:</span> Download links:
+          <span class="font-weight-black">OS-ESB-core:</span> Download links:
           <a
-            href="https://data.shrec22.moon-lab.tech:18443/OS-3DOR/OS-MN40-core/OS-MN40-core.zip"
+            href="https://data.shrec22.moon-lab.tech:18443/OS-3DOR/OS-ESB-core/OS-ESB-core.zip"
             target="_blank"
-            >Multi-modal Data(~1.9G)</a
+            >Multi-modal Data(~100M)</a
           >
           |
           <a
-            href="https://data.shrec22.moon-lab.tech:18443/OS-3DOR/OS-MN40-core/query_label.txt"
+            href="https://data.shrec22.moon-lab.tech:18443/OS-3DOR/OS-ESB-core/query_label.txt"
             target="_blank"
             >Query Label</a
           >
           |
           <a
-            href="https://data.shrec22.moon-lab.tech:18443/OS-3DOR/OS-MN40-core/target_label.txt"
+            href="https://data.shrec22.moon-lab.tech:18443/OS-3DOR/OS-ESB-core/target_label.txt"
             target="_blank"
             >Target Label</a
-          >. This dataset contains 40 usual categories like: bed, chair, etc.
+          >. This dataset contains usual engineering shapes from 41 categories
+          like: handles, L Blocks, Oil Pans, etc.
         </p>
         <p>
           <span class="font-weight-black">OS-NTU-core:</span> Download links:
@@ -165,25 +167,24 @@
           ring, tank, hammer, etc.
         </p>
         <p>
-          <span class="font-weight-black">OS-ESB-core:</span> Download links:
+          <span class="font-weight-black">OS-MN40-core:</span> Download links:
           <a
-            href="https://data.shrec22.moon-lab.tech:18443/OS-3DOR/OS-ESB-core/OS-ESB-core.zip"
+            href="https://data.shrec22.moon-lab.tech:18443/OS-3DOR/OS-MN40-core/OS-MN40-core.zip"
             target="_blank"
-            >Multi-modal Data(~100M)</a
+            >Multi-modal Data(~1.9G)</a
           >
           |
           <a
-            href="https://data.shrec22.moon-lab.tech:18443/OS-3DOR/OS-ESB-core/query_label.txt"
+            href="https://data.shrec22.moon-lab.tech:18443/OS-3DOR/OS-MN40-core/query_label.txt"
             target="_blank"
             >Query Label</a
           >
           |
           <a
-            href="https://data.shrec22.moon-lab.tech:18443/OS-3DOR/OS-ESB-core/target_label.txt"
+            href="https://data.shrec22.moon-lab.tech:18443/OS-3DOR/OS-MN40-core/target_label.txt"
             target="_blank"
             >Target Label</a
-          >. This dataset contains usual engineering shapes from 41 categories
-          like: handles, L Blocks, Oil Pans, etc.
+          >. This dataset contains 40 usual categories like: bed, chair, etc.
         </p>
       </v-col>
     </v-row>

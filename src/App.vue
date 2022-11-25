@@ -30,7 +30,8 @@
       <v-container>
         <v-row>
           <v-col class="text-center" cols="12">
-            <h1>Gallery of the Open-Set 3DOR</h1>
+            <h1>Open-Set 3D Object Retrieval using Structure-Driven Multi-Modal Representation</h1>
+            <!-- <h1>Gallery of the Open-Set 3DOR</h1> -->
           </v-col>
         </v-row>
         <v-row>
@@ -82,31 +83,32 @@
             >
             </v-data-table>
             <p>
-              The OS-MN40 and OS-MN40-Miss are generated from
+              <!-- The OS-MN40 and OS-MN40-Miss are generated from
               <a href="https://modelnet.cs.princeton.edu/" target="_blank"
                 >ModelNet40</a
               >
               in the
               <a href="https://www.shrec.net/" target="_blank">SHREC'22</a>
-              track.The OS-MN40-core, OS-NTU-core and OS-ESB-core are generated
+              track. -->
+              The OS-ESB-core, OS-NTU-core, and OS-MN40-core are generated
               from the
-              <a href="https://modelnet.cs.princeton.edu/" target="_blank"
-                >ModelNet40</a
+              <a
+                href="https://engineering.purdue.edu/cdesign/wp/downloads/"
+                target="_blank"
+                >ESB</a
               >,
               <a
                 href="http://3d.csie.ntu.edu.tw/~dynamic/database/"
                 target="_blank"
                 >NTU</a
               >, and
-              <a
-                href="https://engineering.purdue.edu/cdesign/wp/downloads/"
-                target="_blank"
-                >ESB</a
+              <a href="https://modelnet.cs.princeton.edu/" target="_blank"
+                >ModelNet40</a
               >
               dataset, respectively.
             </p>
           </v-col>
-          <v-col cols="12">
+          <!-- <v-col cols="12">
             <h3>Baseline for the Open-Set 3DOR</h3>
             <p>
               Here, we provide a baseline code, named
@@ -136,7 +138,7 @@
               OS-ESB-core datasets. Detailed performance can be found in the
               following "Open-set 3DOR Leaderboards".
             </p>
-          </v-col>
+          </v-col> -->
         </v-row>
         <v-row class="my-6">
           <v-divider></v-divider>
@@ -147,14 +149,20 @@
         <v-row class="my-6">
           <v-divider></v-divider>
         </v-row>
-        <v-row>
+        <!-- <v-row>
           <SHREC22 />
         </v-row>
         <v-row class="my-6">
           <v-divider></v-divider>
-        </v-row>
-        <v-row>
+        </v-row> -->
+        <!-- <v-row>
           <AllLeaderboard />
+        </v-row>
+        <v-row class="my-6">
+          <v-divider></v-divider>
+        </v-row> -->
+        <v-row>
+          <MoreDetails />
         </v-row>
         <v-row class="my-6">
           <v-divider></v-divider>
@@ -226,17 +234,19 @@
 </template>
 
 <script>
-import SHREC22 from "./components/SHREC22";
+// import SHREC22 from "./components/SHREC22";
 import DownloadData from "./components/DownloadData.vue";
-import AllLeaderboard from "./components/AllLeaderboard.vue";
+// import AllLeaderboard from "./components/AllLeaderboard.vue";
+import MoreDetails from "./components/MoreDetails.vue";
 
 export default {
   name: "App",
 
   components: {
-    SHREC22,
+    // SHREC22,
     DownloadData,
-    AllLeaderboard,
+    // AllLeaderboard,
+    MoreDetails,
   },
 
   data: () => ({
@@ -261,48 +271,48 @@ export default {
       { text: "Source", value: "src", align: "center" },
     ],
     datasets: [
+      // {
+      //   name: "OS-MN40",
+      //   mv: "Horizontal 24 Views",
+      //   pts: "1024, 2048 Points",
+      //   vox: "32, 64 Dimensions",
+      //   mesh: "Original, 500-face",
+      //   tra_set: "8/2821",
+      //   ret_set: "32/9489",
+      //   avg_per: "307",
+      //   n_obj: "12310",
+      //   src: "ModelNet40",
+      // },
+      // {
+      //   name: "OS-MN40-Miss",
+      //   mv: "Horizontal 24 Views",
+      //   pts: "1024, 2048 Points",
+      //   vox: "32, 64 Dimensions",
+      //   mesh: "Original, 500-face",
+      //   tra_set: "8/2821",
+      //   ret_set: "32/9489",
+      //   avg_per: "307",
+      //   n_obj: "12310",
+      //   src: "ModelNet40",
+      // },
       {
-        name: "OS-MN40",
-        mv: "Horizontal 24 Views",
-        pts: "1024, 2048 Points",
-        vox: "32, 64 Dimensions",
-        mesh: "Original, 500-face",
-        tra_set: "8/2821",
-        ret_set: "32/9489",
-        avg_per: "307",
-        n_obj: "12310",
-        src: "ModelNet40",
-      },
-      {
-        name: "OS-MN40-Miss",
-        mv: "Horizontal 24 Views",
-        pts: "1024, 2048 Points",
-        vox: "32, 64 Dimensions",
-        mesh: "Original, 500-face",
-        tra_set: "8/2821",
-        ret_set: "32/9489",
-        avg_per: "307",
-        n_obj: "12310",
-        src: "ModelNet40",
-      },
-      {
-        name: "OS-MN40-core",
+        name: "OS-ESB-core",
         mv: "Horizontal 24 Views",
         pts: "1024 Points",
         vox: "32 Dimensions",
-        mesh: "-",
-        tra_set: "8/2821",
-        ret_set: "32/9489",
-        avg_per: "307",
-        n_obj: "12310",
-        src: "ModelNet40",
+        mesh: "Original",
+        tra_set: "17/98",
+        ret_set: "24/572",
+        avg_per: "16",
+        n_obj: "670",
+        src: "ESB",
       },
       {
         name: "OS-NTU-core",
         mv: "Horizontal 24 Views",
         pts: "1024 Points",
         vox: "32 Dimensions",
-        mesh: "-",
+        mesh: "Original",
         tra_set: "13/378",
         ret_set: "54/1541",
         avg_per: "28",
@@ -310,16 +320,16 @@ export default {
         src: "NTU",
       },
       {
-        name: "OS-ESB-core",
+        name: "OS-MN40-core",
         mv: "Horizontal 24 Views",
         pts: "1024 Points",
         vox: "32 Dimensions",
-        mesh: "-",
-        tra_set: "17/98",
-        ret_set: "24/572",
-        avg_per: "16",
-        n_obj: "670",
-        src: "ESB",
+        mesh: "Original",
+        tra_set: "8/2821",
+        ret_set: "32/9489",
+        avg_per: "307",
+        n_obj: "12310",
+        src: "ModelNet40",
       },
     ],
     icons: [
