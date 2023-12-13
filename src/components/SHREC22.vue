@@ -10,7 +10,7 @@
       <v-col cols="12">
         <p class="subheading font-weight-regular">
           This track is stored in
-          <a href="https://www.shrec.net/" target="_blank"> SHREC'22</a>, and
+          <a href="https://www.shrec.net/" target="_blank"> SHREC'22</a>[1], and
           the main page of this track can be found in
           <a href="https://www.moon-lab.tech/shrec22" target="_blank"> here</a>.
           The objective of this track is to evaluate the performance of the
@@ -48,7 +48,7 @@
         </p>
       </v-col>
       <v-row class="d-flex justify-md-space-around">
-        <v-col cols="12" md="5">
+        <v-col cols="12" lg="6">
           <div class="text-center text-h6">Leaderboard for OS-MN40</div>
           <v-data-table
             :headers="headers"
@@ -59,7 +59,7 @@
           >
           </v-data-table>
         </v-col>
-        <v-col cols="12" md="5">
+        <v-col cols="12" lg="6">
           <div class="text-center text-h6">Leaderboard for OS-MN40-Miss</div>
           <v-data-table
             :headers="headers"
@@ -75,10 +75,10 @@
       <v-col cols="12">
         <h3>Reference</h3>
         <p>
-          Yifan Feng and Yue Gao, et al.
-          <a href="https://www.moon-lab.tech/shrec22" target="_blank"
-            >SHREC'22 Track: Open-Set 3D Object Retrieval</a
-          >. Computers and Graphics (Elsevier). <br />
+          [1] Yifan Feng and Yue Gao, et al.
+        <a href="https://www.moon-lab.tech/shrec22" target="_blank"
+          >SHREC'22 Track: Open-Set 3D Object Retrieval</a
+        >. Computers & Graphics, 2022, 107: 231-240. <br />
         </p>
       </v-col>
     </v-row>

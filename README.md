@@ -1,4 +1,4 @@
-# final_shrec_page
+# Source Code for OS-3DOR Page
 
 ## Project setup
 ```

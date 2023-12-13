@@ -4,7 +4,7 @@
       <v-col cols="12">
         <h2>Downloads</h2>
       </v-col>
-      <!-- <v-col cols="12">
+      <v-col cols="12">
         <h3>OS-MN40 and OS-MN40-Miss</h3>
         <p>
           OS-MN40 and OS-MN40-Miss contain
@@ -70,7 +70,7 @@
             >Target Label</a
           >.
         </p>
-      </v-col> -->
+      </v-col>
 
       <v-col cols="12">
         <h3>OS-ESB-core, OS-NTU-core, and OS-MN40-core</h3>

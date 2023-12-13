@@ -9,7 +9,7 @@
         <h3 class="mb-3">Multi-Modality Data Generation</h3>
         <v-row>
           <v-col>
-            <h4 >Multi-view Data</h4>
+            <h4>Multi-view Data</h4>
             <p>
               Blender 3.0 is adopted to render multi-view data. For more
               realistic imaging, we put a plane below the 3D object with the
@@ -25,12 +25,7 @@
             </p>
           </v-col>
           <v-col cols="12" sm="4" lg="3" xl="2">
-            <v-img
-              :src="require('../assets/generation/mv.jpg')"
-              class="my-3"
-              contain
-              max-height="200"
-            />
+            <v-img :src="require('../assets/generation/mv.jpg')" class="my-3" contain max-height="200" />
           </v-col>
         </v-row>
         <v-row>
@@ -56,12 +51,7 @@
             </p>
           </v-col>
           <v-col cols="12" sm="4" lg="3" xl="2">
-            <v-img
-              :src="require('../assets/generation/pt.jpg')"
-              class="my-3"
-              contain
-              max-height="200"
-            />
+            <v-img :src="require('../assets/generation/pt.jpg')" class="my-3" contain max-height="200" />
           </v-col>
         </v-row>
         <v-row>
@@ -82,57 +72,42 @@
             </p>
           </v-col>
           <v-col cols="12" sm="4" lg="3" xl="2">
-            <v-img
-              :src="require('../assets/generation/vox.jpg')"
-              class="my-3"
-              contain
-              max-height="200"
-            />
+            <v-img :src="require('../assets/generation/vox.jpg')" class="my-3" contain max-height="200" />
           </v-col>
         </v-row>
       </v-col>
 
-      <v-col cols="12">
-        <h3>OS-ESB-core</h3>
-        <v-img
-          :src="require('../assets/details/vis_esb.jpg')"
-          class="my-3"
-          contain
-          max-height="400"
-        />
-        <p class="text-center font-italic">
-          Visualization of the multi-modal representations of 3D objects in the
-          OS-ESB-core dataset
-        </p>
-      </v-col>
+      <v-row justify="center">
+        <v-col cols="12" md="6">
+          <v-card class="pt-6">
+            <!-- <h3>OS-ESB-core</h3> -->
+            <v-img :src="require('../assets/details/vis_esb.jpg')" class="my-3" aspect-ratio="2.5" contain max-height="450" />
+            <v-card-subtitle class="text-center font-italic text-subtitle-1 font-weight-medium">
+              Visualization of the multi-modal representations of 3D objects in OS-ESB-core dataset
+            </v-card-subtitle>
+          </v-card>
+        </v-col>
 
-      <v-col cols="12">
-        <h3>OS-NTU-core</h3>
-        <v-img
-          :src="require('../assets/details/vis_ntu.jpg')"
-          class="my-3"
-          contain
-          max-height="400"
-        />
-        <p class="text-center font-italic">
-          Visualization of the multi-modal representations of 3D objects in the
-          OS-NTU-core dataset
-        </p>
-      </v-col>
+        <v-col cols="12" md="6">
+          <v-card class="pt-6">
+            <!-- <h3>OS-NTU-core</h3> -->
+            <v-img :src="require('../assets/details/vis_ntu.jpg')" class="my-3" aspect-ratio="2.5" contain max-height="450" />
+            <v-card-subtitle class="text-center font-italic text-subtitle-1 font-weight-medium">
+              Visualization of the multi-modal representations of 3D objects in OS-NTU-core dataset
+            </v-card-subtitle>
+          </v-card>
+        </v-col>
 
-      <v-col cols="12">
-        <h3>OS-ESB-core</h3>
-        <v-img
-          :src="require('../assets/details/vis_mn40.jpg')"
-          class="my-3"
-          contain
-          max-height="400"
-        />
-        <p class="text-center font-italic">
-          Visualization of the multi-modal representations of 3D objects in the
-          OS-MN40-core dataset
-        </p>
-      </v-col>
+        <v-col cols="12" md="6">
+          <v-card class="pt-6">
+            <!-- <h3>OS-ESB-core</h3> -->
+            <v-img :src="require('../assets/details/vis_mn40.jpg')" class="my-3" aspect-ratio="2.5" contain max-height="450" />
+            <v-card-subtitle class="text-center font-italic text-subtitle-1 font-weight-medium">
+              Visualization of the multi-modal representations of 3D objects in OS-MN40-core dataset
+            </v-card-subtitle>
+          </v-card>
+        </v-col>
+      </v-row>
     </v-row>
   </v-container>
 </template>
